@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # copy lib code
 cp -R example/ example.copy/
 
@@ -8,7 +10,7 @@ cp -R venv/lib/python3.10/site-packages/* example/
 terraform init
 
 # terraform apply
-terraform init
+terraform apply
 
 # delete lib code
 rm -rf example
