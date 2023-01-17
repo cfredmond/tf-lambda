@@ -1,6 +1,6 @@
 # tf-lambda
 
-Terraform lambda starter project
+tf-lambda provides a simple, easy-to-use starting point for creating and managing AWS Lambda resources using Terraform.
 
 ## Setup
 

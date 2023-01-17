@@ -1,4 +1,5 @@
 .terraform/
+venv/
 .terraform.lock.hcl
 example.zip
 terraform.tfstate
