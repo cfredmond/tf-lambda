@@ -1,6 +1,7 @@
 .terraform/
+example-dist/
 venv/
 .terraform.lock.hcl
-example.zip
+example-dist.zip
 terraform.tfstate
 terraform.tfstate.backup
