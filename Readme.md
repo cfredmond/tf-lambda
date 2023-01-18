@@ -2,20 +2,29 @@
 
 tf-lambda provides a simple, easy-to-use starting point for creating and managing AWS Lambda resources using Terraform.
 
-## Setup and development
+## Setup
 
-1. Go to https://github.com/cfredmond/tf-lambda/generate
-2. Add your repository name, a description (optional), set the branch visibility and click `Create repository from template`
-3. Once your repository is created clone it to your system
-4. From your terminal, cd into your repo and run
+1. Go to https://github.com/cfredmond/tf-lambda/generate to access the tf-lambda tool and generate your template.
+2. Enter your desired repository name, add a brief and informative description (if desired), select the appropriate branch visibility setting, and click the `Create repository from template` button to create a new repository using the selected template.
+3. Clone the repository to your local system for editing.
+4. Navigate to the cloned repository and set up a virtual environment by running the following commands:
 ```
 python -m venv venv
-source venv/bin/activate
+source venv/venv/bin/activate
 ```
-5. Install your dependencies and add your lambda logic to the `example/example.py` script
-6. To deploy your lamnda run the build script in the root directory
+5. Install any required packages and add your lambda code to the example.py file in the example folder.
+6. Package your lambda and its dependencies by running:
 ```
-./build.sh
+./package.sh
+```
+7. Initialize terraform and run the plan command:
+```
+terraform init
+terraform plan
+```
+8. Review the plan and make any necessary adjustments, then run:
+```
+terraform apply
 ```
 
-This will package and deploy the lambda in the `example` folder.
+This command will package and deploy the contents of the example folder as a Lambda function on AWS, making it ready for use.
